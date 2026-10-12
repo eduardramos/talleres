@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#155da1">
+  <meta name="description" content="Prepara tu encuentro y confirma tu asistencia al taller Del conflicto al encuentro. Domingo 18 de octubre de 2026, Casa Azul, Chodes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Antes de encontrarnos · Del conflicto al encuentro">
+  <meta property="og:description" content="Una pequeña reflexión, los detalles del domingo y la confirmación por WhatsApp.">
+  <title>Antes de encontrarnos · Del conflicto al encuentro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --azul:#155da1;--azul-profundo:#133d64;--marfil:#fffcf6;
+      --tinta:#28333d;--suave:#526371;--oro:#e8bd79;
+      --linea:#e3d8c4;--pastilla:#eaf3fb;
+      --font:"Nunito Sans","Trebuchet MS",Arial,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--marfil);color:var(--tinta);font:400 17px/1.65 var(--font);-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    a:focus-visible{outline:3px solid var(--oro);outline-offset:4px}
+    .container{width:min(100% - 42px,810px);margin:0 auto}
+    .hero{overflow:hidden;position:relative;isolation:isolate;color:#fff;background:linear-gradient(115deg,#133d64 0%,#155da1 74%,#2776b6 100%);padding:58px 0 65px}
+    .hero::before,.hero::after{content:"";position:absolute;z-index:-1;border:1px solid rgba(255,255,255,.22);border-radius:50%;width:min(62vw,410px);aspect-ratio:1;right:-95px;top:-135px}
+    .hero::after{width:min(48vw,320px);right:115px;top:20px;border-color:rgba(232,189,121,.46)}
+    .eyebrow{display:inline-block;color:#f7d8a4;font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+    .hero h1{max-width:720px;font-weight:900;font-size:clamp(37px,7vw,61px);line-height:1.09;letter-spacing:-.045em;margin:20px 0 17px}
+    .hero p{max-width:600px;margin:0;color:#edf5ff;font-size:clamp(17px,3vw,21px);line-height:1.55}
+    .gold-line{width:60px;height:4px;border-radius:10px;background:var(--oro);margin:29px 0 0}
+    main{padding:49px 0 61px}
+    section{margin-bottom:42px}
+    h2{font-size:clamp(23px,4.2vw,31px);line-height:1.25;letter-spacing:-.03em;color:var(--azul-profundo);margin:0 0 18px;font-weight:900}
+    p{margin:0 0 17px}
+    .lead{font-size:19px}
+    .example{margin:28px 0;background:#eef5fb;border-left:4px solid var(--azul);padding:24px 25px;border-radius:0 14px 14px 0}
+    .example p{margin:0}
+    .example strong{color:var(--azul-profundo)}
+    .reflection{position:relative;border:1px solid #e5d7bc;border-radius:20px;padding:30px;background:#fff7e9;box-shadow:0 8px 26px rgba(40,51,61,.035)}
+    .reflection .small{display:block;font-size:12px;font-weight:900;letter-spacing:.12em;color:#825b21;text-transform:uppercase;margin-bottom:10px}
+    .reflection h2{margin-bottom:13px}
+    .reflection .question{font-size:22px;font-weight:800;line-height:1.42;color:var(--azul-profundo);margin-bottom:16px}
+    .reflection p:last-child{margin-bottom:0}
+    .details{border-top:1px solid var(--linea);padding-top:37px}
+    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+    .detail{background:#fff;border:1px solid var(--linea);border-radius:15px;padding:18px 20px}
+    .detail .k{display:block;text-transform:uppercase;font-size:11px;font-weight:900;letter-spacing:.13em;color:var(--suave);margin-bottom:6px}
+    .detail strong{display:block;font-size:18px;line-height:1.3;color:var(--azul-profundo)}
+    .detail span:last-child{font-size:14px;color:var(--suave)}
+    .rest{background:var(--pastilla);padding:19px 22px;border-radius:14px}
+    .rest p:last-child{margin-bottom:0}
+    .confirm{padding:34px 27px 30px;border-radius:21px;color:#fff;background:linear-gradient(145deg,#133d64,#155da1);text-align:center;box-shadow:0 12px 33px rgba(19,61,100,.14)}
+    .confirm h2{color:#fff}
+    .confirm p{color:#eaf3fb;max-width:570px;margin-left:auto;margin-right:auto}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:900;font-size:16px;min-height:54px;line-height:1.25;border-radius:100px;padding:15px 24px;transition:transform .2s,box-shadow .2s}
+    .button:hover{transform:translateY(-2px);box-shadow:0 6px 17px rgba(0,0,0,.18)}
+    .button.primary{background:#fff;color:var(--azul-profundo);margin:12px auto 6px}
+    .button.secondary{border:1px solid rgba(255,255,255,.65);color:#fff;margin-top:9px;background:transparent;font-weight:700;font-size:14px}
+    .button svg{width:20px;height:20px;flex:none}
+    .footnote{display:block;font-size:13px;color:#eaf3fb;margin-top:18px;line-height:1.5}
+    footer{border-top:1px solid var(--linea);padding:26px 0 37px}
+    footer .container{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--suave)}
+    footer strong{color:var(--azul-profundo)}
+    footer a{color:var(--azul);text-decoration-thickness:1px;text-underline-offset:4px}
+    @media(max-width:600px){body{font-size:16px}.container{width:min(100% - 34px,810px)}.hero{padding:49px 0 52px}.hero::before{right:-170px}.hero::after{right:55px}.detail-grid{grid-template-columns:1fr}.reflection{padding:25px 22px}.confirm{padding:29px 19px}.button{width:100%}.lead{font-size:17px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="eyebrow">Taller vivencial · Chodes</span>
+      <h1>Antes de encontrarnos</h1>
+      <p>Una pequeña reflexión para empezar a acercarnos a lo que viviremos juntos el domingo.</p>
+      <div class="gold-line" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="intro-title">
+      <h2 id="intro-title">Del conflicto al encuentro</h2>
+      <p class="lead">El próximo domingo 18 de octubre compartiremos un día para explorar qué nos sucede cuando una conversación se convierte en conflicto y cómo podemos abrir nuevas formas de relacionarnos.</p>
+      <p>Quiero adelantarte una idea. A veces discutimos por lo que alguien ha dicho o hecho, pero lo que realmente nos duele está relacionado con una necesidad que todavía no hemos sabido expresar.</p>
+      <div class="example">
+        <p>Detrás de un <strong>«nunca me escuchas»</strong> quizá haya un <strong>«necesito sentir que lo que digo es importante para ti»</strong>.</p>
+      </div>
+    </section>
+
+    <section class="reflection" aria-labelledby="reflexion-title">
+      <span class="small">Una propuesta para estos días</span>
+      <h2 id="reflexion-title">Observa una conversación que se repite</h2>
+      <p>Piensa en alguna conversación de tu vida que te gustaría vivir de otra manera. No necesitas resolverla ni preparar nada. Simplemente obsérvala con curiosidad.</p>
+      <p class="question">¿Qué estoy intentando expresar cuando siento que la otra persona no me comprende?</p>
+      <p>El domingo tendremos ocasión de explorar juntos lo que sucede en esos encuentros.</p>
+    </section>
+
+    <section class="details" aria-labelledby="datos-title">
+      <h2 id="datos-title">Nos vemos el domingo</h2>
+      <div class="detail-grid">
+        <div class="detail"><span class="k">Cuándo</span><strong>Domingo 18 de octubre</strong><span>De 10:00 a 17:00 h · 2026</span></div>
+        <div class="detail"><span class="k">Dónde</span><strong>Casa Azul · Chodes</strong><span>Zaragoza</span></div>
+      </div>
+      <div class="rest">
+        <p><strong>Pausa para comer y descansar · 13:30 a 15:00 h</strong></p>
+        <p>Tendremos una hora y media libre para comer, descansar o, si te apetece, dar un paseo por el pueblo. Puedes organizarte a tu ritmo.</p>
+      </div>
+    </section>
+
+    <section class="confirm" id="confirmar" aria-labelledby="confirm-title">
+      <h2 id="confirm-title">¿Me confirmas que nos vemos?</h2>
+      <p>Para terminar de organizar el encuentro, te agradeceré que confirmes tu asistencia. Crearé un grupo temporal de WhatsApp únicamente para los detalles prácticos. Tú decides si quieres estar en él.</p>
+      <a class="button primary" href="https://wa.me/34605004011?text=Hola%20Eduard%2C%20confirmo%20mi%20asistencia%20al%20taller%20%C2%ABDel%20conflicto%20al%20encuentro%C2%BB%20del%20domingo%2018%20de%20octubre%20en%20Casa%20Azul%2C%20Chodes.%20Tambi%C3%A9n%20puedes%20incluirme%20en%20el%20grupo%20temporal%20de%20WhatsApp%20para%20los%20detalles%20pr%C3%A1cticos.%20%C2%A1Gracias!" target="_blank" rel="noopener noreferrer" aria-label="Confirmar asistencia y aceptar la invitación al grupo de WhatsApp">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 0 1-11.8 7.1L3 20l1.4-5.2A8 8 0 1 1 20 11.5Z"/><path d="M9.1 8.6c.1 2.1 2.2 4.3 4.3 4.8.5.1.9-.8 1.3-.7l2.1 1.1c.3.2-.1 1.5-.9 1.9-2.2 1.2-7.7-3.2-8-5.8-.1-.7.7-1.7 1.2-1.3Z"/></svg>
+        Confirmar y unirme al grupo
+      </a>
+      <div><a class="button secondary" href="https://wa.me/34605004011?text=Hola%20Eduard%2C%20confirmo%20mi%20asistencia%20al%20taller%20%C2%ABDel%20conflicto%20al%20encuentro%C2%BB%20del%20domingo%2018%20de%20octubre%20en%20Casa%20Azul%2C%20Chodes.%20Prefiero%20recibir%20los%20detalles%20pr%C3%A1cticos%20individualmente%20y%20no%20entrar%20en%20el%20grupo%20de%20WhatsApp.%20%C2%A1Gracias!" target="_blank" rel="noopener noreferrer">Confirmar sin entrar en el grupo</a></div>
+      <span class="footnote">Se abrirá WhatsApp con el mensaje preparado. Podrás revisarlo antes de enviarlo.</span>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span><strong>Eduard Ramos</strong> · Del conflicto al encuentro</span>
+      <a href="../">Volver a la página del taller</a>
+    </div>
+  </footer>
+</body>
+</html>
