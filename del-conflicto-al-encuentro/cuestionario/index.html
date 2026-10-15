@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#155da1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Una breve reflexión personal antes del taller Del conflicto al encuentro · Casa Azul, Chodes · 18 de octubre de 2026.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Antes de encontrarnos · Del conflicto al encuentro">
+<meta property="og:description" content="Un cuestionario personal de tres minutos para preparar nuestro encuentro del domingo.">
+<title>Antes de encontrarnos · Del conflicto al encuentro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#155da1;--profundo:#133d64;--marfil:#fffcf6;--tinta:#28333d;--suave:#526371;--oro:#e8bd79;--linea:#e3d8c4;--font:"Nunito Sans","Trebuchet MS",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--marfil);scroll-behavior:smooth}
+body{margin:0;background:var(--marfil);color:var(--tinta);font:400 17px/1.52 var(--font);-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit}
+a{color:var(--azul)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.container{width:min(100% - 42px,820px);margin-inline:auto}
+header{background:linear-gradient(120deg,var(--profundo),var(--azul));color:#fff;overflow:hidden}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;align-items:center;min-height:280px;padding:41px 0}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f7d8a4;font-weight:900;margin:0 0 12px}
+h1{font-size:clamp(32px,5.5vw,54px);font-weight:900;line-height:1.07;letter-spacing:-.04em;margin:0 0 16px}
+.subheading{margin:0;font-size:20px;color:#eaf3fb}
+.chairs{width:100%;max-width:320px;justify-self:end;filter:drop-shadow(0 4px 8px rgba(0,0,0,.09))}
+main{padding:36px 0 55px}
+.intro{font-size:19px;line-height:1.6;text-align:center;margin:0 auto 12px;max-width:715px}
+.intro strong{color:var(--profundo)}
+.time{margin:0 auto 30px;text-align:center;color:var(--suave);font-size:14px}
+.questionnaire{display:grid;gap:16px}
+.question{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:25px 27px;box-shadow:0 7px 25px rgba(19,61,100,.035)}
+.question legend{padding:0}
+.number{display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--azul);font-weight:900;margin-bottom:7px}
+.question-title{display:block;color:var(--profundo);font-size:clamp(19px,3vw,22px);font-weight:900;line-height:1.3;margin:0 0 8px}
+.hint{display:block;color:var(--suave);font-size:14px;margin:0 0 16px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice{display:flex;align-items:center;gap:10px;border:1px solid #d8e0e7;border-radius:12px;padding:12px 13px;cursor:pointer;min-height:52px;transition:background .17s,border-color .17s}
+.choice:hover{border-color:#8baecc;background:#f5faff}
+.choice:has(input:checked){border-color:var(--azul);background:#eaf3fb}
+.choice input{accent-color:var(--azul);width:18px;height:18px;flex:none}
+.choice span{line-height:1.32;font-size:15px}
+.scale{display:flex;gap:8px;justify-content:space-between}
+.scale .choice{flex:1;display:grid;justify-items:center;gap:4px;padding:12px 5px;text-align:center}
+.scale .choice input{margin:0}
+.scale .choice span{font-size:18px;font-weight:800;color:var(--profundo)}
+.extremes{display:flex;justify-content:space-between;gap:12px;margin-top:11px;color:var(--suave);font-size:13px}
+textarea{width:100%;min-height:93px;border:1px solid #d8e0e7;border-radius:12px;resize:vertical;padding:13px;color:var(--tinta);background:#fff}
+textarea::placeholder{color:#83919b}
+.privacy{border:1px solid var(--linea);background:#f7f0e5;border-radius:15px;padding:18px 20px;font-size:14px;line-height:1.6}
+.privacy strong{color:var(--profundo)}
+.privacy p{margin:0 0 10px}
+.agree{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
+.agree input{accent-color:var(--azul);width:19px;height:19px;margin-top:3px;flex:none}
+.actions{text-align:center;padding:6px 0 2px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:54px;width:min(100%,440px);border:0;border-radius:999px;padding:13px 24px;font-size:16px;font-weight:900;text-decoration:none;cursor:pointer;background:var(--azul);color:#fff;transition:background .18s,transform .18s}
+.button:hover{background:var(--profundo);transform:translateY(-1px)}
+.button-alt{margin-top:12px;background:#fff;color:var(--azul);border:1px solid #b5cbdc}
+.button-alt:hover{background:#eaf3fb;color:var(--profundo)}
+.smallnote{font-size:13px;color:var(--suave);margin:12px auto 0;max-width:585px;line-height:1.5}
+.error{display:none;color:#a12f20;font-size:14px;font-weight:700;margin:0 auto 12px;max-width:600px}
+.error.show{display:block}
+.back{display:block;margin:27px auto 0;text-align:center;font-size:14px;font-weight:700;text-underline-offset:3px}
+footer{padding:24px 0 28px;border-top:1px solid var(--linea);font-size:13px;color:var(--suave);text-align:center}
+footer strong{color:var(--profundo)}
+@media(max-width:640px){
+body{font-size:16px}.container{width:min(100% - 32px,820px)}
+.hero{grid-template-columns:1fr;gap:8px;padding:31px 0 24px;text-align:center}
+.chairs{width:min(67%,210px);justify-self:center}
+.subheading{font-size:17px}main{padding:27px 0 39px}
+.intro{font-size:17px}.question{padding:21px 18px}.choices{grid-template-columns:1fr;gap:8px}
+.choice{padding:11px 12px;min-height:49px}
+.scale{gap:5px}.scale .choice{min-height:66px;padding:8px 3px}.scale .choice span{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){.button,.choice{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container hero">
+    <div>
+      <p class="eyebrow">Taller vivencial · Casa Azul · Chodes</p>
+      <h1>Del conflicto<br>al encuentro</h1>
+      <p class="subheading">Antes de encontrarnos</p>
+    </div>
+    <svg aria-label="Dos sillas frente a un sol" class="chairs" role="img" viewBox="0 0 380 240">
+      <circle cx="190" cy="78" r="38" fill="#f8c76e"></circle>
+      <circle cx="190" cy="78" r="63" fill="none" stroke="#f8c76e" stroke-width="1.3"></circle>
+      <circle cx="190" cy="78" r="88" fill="none" stroke="#f8c76e" stroke-width="1.3"></circle>
+      <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+        <path d="M41 41 L58 172 L131 172 M144 172 H58 M70 172 L71 218 M127 172 L128 218"></path>
+        <path d="M339 41 L322 172 L249 172 M236 172 H322 M310 172 L309 218 M253 172 L252 218"></path>
+        <path d="M39 226 H341" stroke-width="3"></path>
+      </g>
+    </svg>
+  </div>
+</header>
+<main class="container">
+  <p class="intro"><strong>Antes de compartir el domingo, te propongo una pequeña pausa.</strong> No se trata de analizar tus conflictos ni de encontrar respuestas perfectas. Solo de observar cómo los vives. Tus respuestas me ayudarán a preparar un encuentro más cercano a lo que necesitamos.</p>
+  <p class="time">3 minutos · 6 preguntas · Participación voluntaria · Domingo 18 de octubre de 2026</p>
+  <form class="questionnaire" id="cuestionario" novalidate>
+    <section class="question" aria-labelledby="titulo1">
+      <span class="number">Pregunta 01</span>
+      <h2 class="question-title" id="titulo1">¿En qué ámbito aparecen los conflictos que más te preocupan?</h2>
+      <p class="hint">Puedes elegir más de una respuesta.</p>
+      <div class="choices">
+        <label class="choice"><input type="checkbox" name="ambito" value="Pareja"><span>Pareja</span></label>
+        <label class="choice"><input type="checkbox" name="ambito" value="Familia"><span>Familia</span></label>
+        <label class="choice"><input type="checkbox" name="ambito" value="Trabajo"><span>Trabajo</span></label>
+        <label class="choice"><input type="checkbox" name="ambito" value="Amistades"><span>Amistades</span></label>
+        <label class="choice"><input type="checkbox" name="ambito" value="Conmigo mismo/a"><span>Conmigo mismo/a</span></label>
+        <label class="choice"><input type="checkbox" name="ambito" value="Otros ámbitos"><span>Otros ámbitos</span></label>
+      </div>
+    </section>
+    <section class="question" aria-labelledby="titulo2">
+      <span class="number">Pregunta 02</span>
+      <h2 class="question-title" id="titulo2">Cuando surge un conflicto, ¿qué sueles hacer primero?</h2>
+      <p class="hint">Elige la reacción que más te representa, aunque a veces hagas otras cosas.</p>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="reaccion" value="Me callo"><span>Me callo</span></label>
+        <label class="choice"><input type="radio" name="reaccion" value="Me defiendo o me justifico"><span>Me defiendo o me justifico</span></label>
+        <label class="choice"><input type="radio" name="reaccion" value="Cedo para evitar tensiones"><span>Cedo para evitar tensiones</span></label>
+        <label class="choice"><input type="radio" name="reaccion" value="Me enfado"><span>Me enfado</span></label>
+        <label class="choice"><input type="radio" name="reaccion" value="Tomo distancia"><span>Tomo distancia</span></label>
+        <label class="choice"><input type="radio" name="reaccion" value="Intento solucionarlo enseguida"><span>Intento solucionarlo enseguida</span></label>
+      </div>
+    </section>
+    <section class="question" aria-labelledby="titulo3">
+      <span class="number">Pregunta 03</span>
+      <h2 class="question-title" id="titulo3">¿Qué te resulta más difícil en una situación de conflicto?</h2>
+      <p class="hint">Puedes elegir hasta dos respuestas.</p>
+      <div class="choices">
+        <label class="choice"><input type="checkbox" name="dificultad" value="Decir lo que siento"><span>Decir lo que siento</span></label>
+        <label class="choice"><input type="checkbox" name="dificultad" value="Escuchar sin reaccionar"><span>Escuchar sin reaccionar</span></label>
+        <label class="choice"><input type="checkbox" name="dificultad" value="Poner límites"><span>Poner límites</span></label>
+        <label class="choice"><input type="checkbox" name="dificultad" value="Decir que no"><span>Decir que no</span></label>
+        <label class="choice"><input type="checkbox" name="dificultad" value="Aceptar las diferencias"><span>Aceptar las diferencias</span></label>
+        <label class="choice"><input type="checkbox" name="dificultad" value="Gestionar la culpa"><span>Gestionar la culpa</span></label>
+      </div>
+    </section>
+    <section class="question" aria-labelledby="titulo4">
+      <span class="number">Pregunta 04</span>
+      <h2 class="question-title" id="titulo4">¿Cómo valoras hoy tu capacidad para afrontar los conflictos?</h2>
+      <p class="hint">Del 1 al 5. Es una percepción personal, no una evaluación.</p>
+      <div class="scale" role="radiogroup" aria-labelledby="titulo4">
+        <label class="choice"><input type="radio" name="capacidad" value="1"><span>1</span></label>
+        <label class="choice"><input type="radio" name="capacidad" value="2"><span>2</span></label>
+        <label class="choice"><input type="radio" name="capacidad" value="3"><span>3</span></label>
+        <label class="choice"><input type="radio" name="capacidad" value="4"><span>4</span></label>
+        <label class="choice"><input type="radio" name="capacidad" value="5"><span>5</span></label>
+      </div>
+      <div class="extremes"><span>Me cuesta mucho</span><span>Me manejo bien</span></div>
+    </section>
+    <section class="question" aria-labelledby="titulo5">
+      <span class="number">Pregunta 05</span>
+      <h2 class="question-title" id="titulo5">¿Qué te gustaría descubrir o aprender en este taller?</h2>
+      <p class="hint">Si lo deseas, escríbelo con tus palabras.</p>
+      <textarea name="aprender" maxlength="500" placeholder="Me gustaría..." aria-labelledby="titulo5"></textarea>
+    </section>
+    <section class="question" aria-labelledby="titulo6">
+      <span class="number">Pregunta 06</span>
+      <h2 class="question-title" id="titulo6">Si el domingo te llevaras una sola cosa del taller, ¿cuál te gustaría que fuera?</h2>
+      <p class="hint">Una palabra, una idea o una frase pueden ser suficientes.</p>
+      <textarea name="llevar" maxlength="500" placeholder="Me gustaría llevarme..." aria-labelledby="titulo6"></textarea>
+    </section>
+    <section class="privacy" aria-label="Privacidad y uso de las respuestas">
+      <p><strong>Un espacio de confianza.</strong> Este cuestionario es voluntario y se utilizará únicamente para preparar el taller. Trataré las respuestas con discreción y no las compartiré individualmente con el grupo. Evita incluir nombres o datos de otras personas.</p>
+      <p>Esta web no guarda las respuestas. Al pulsar enviar, se abrirá un mensaje dirigido a mí que podrás revisar. Solo se enviará cuando lo confirmes en WhatsApp o en tu correo. No solicito tu nombre, aunque el servicio de envío puede identificarte.</p>
+      <label class="agree"><input type="checkbox" id="acepto"><span>He leído esta información y quiero compartir mis respuestas con Eduard para preparar el taller.</span></label>
+    </section>
+    <div class="actions">
+      <p id="error" class="error" role="alert" aria-live="polite"></p>
+      <button class="button" type="submit" id="enviar">Preparar envío por WhatsApp</button>
+      <button class="button button-alt" type="button" id="enviar-email">Prefiero enviar por correo</button>
+      <p class="smallnote">Se abrirá WhatsApp o tu aplicación de correo con las respuestas preparadas. Podrás revisarlas y decidir si las envías. No se publicarán en el grupo.</p>
+    </div>
+  </form>
+  <a class="back" href="../">← Volver a la información del taller</a>
+</main>
+<footer><div class="container"><strong>Eduard Ramos</strong> · Del conflicto al encuentro · Casa Azul, Chodes</div></footer>
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('cuestionario');
+  var error = document.getElementById('error');
+  var dificultad = Array.prototype.slice.call(form.querySelectorAll('input[name="dificultad"]'));
+  dificultad.forEach(function (item) {
+    item.addEventListener('change', function () {
+      var marcadas = dificultad.filter(function (x) { return x.checked; });
+      if (marcadas.length > 2) {
+        item.checked = false;
+        showError('En la pregunta 3 puedes elegir un máximo de dos opciones.');
+      } else { hideError(); }
+    });
+  });
+  function showError(message) {
+    error.textContent = message;
+    error.classList.add('show');
+    error.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+  function hideError() { error.textContent = ''; error.classList.remove('show'); }
+  function values(name) {
+    return Array.prototype.slice.call(form.querySelectorAll('input[name="' + name + '"]:checked')).map(function (i) { return i.value; });
+  }
+  function validate() {
+    if (!values('ambito').length) { showError('Elige al menos un ámbito en la pregunta 1.'); return false; }
+    if (!values('reaccion').length) { showError('Elige una respuesta en la pregunta 2.'); return false; }
+    if (!values('dificultad').length) { showError('Elige al menos una opción en la pregunta 3.'); return false; }
+    if (!values('capacidad').length) { showError('Marca un número del 1 al 5 en la pregunta 4.'); return false; }
+    if (!document.getElementById('acepto').checked) { showError('Para continuar, confirma que has leído la información sobre privacidad.'); return false; }
+    hideError();
+    return true;
+  }
+  function message() {
+    function optional(text) { return text.trim() || '(sin respuesta)'; }
+    return [
+      'ANTES DE ENCONTRARNOS · Taller Del conflicto al encuentro',
+      'Domingo 18 de octubre de 2026 · Casa Azul, Chodes',
+      '',
+      '1. Ámbitos: ' + values('ambito').join(', '),
+      '2. Reacción habitual: ' + values('reaccion').join(', '),
+      '3. Lo más difícil: ' + values('dificultad').join(', '),
+      '4. Capacidad actual: ' + values('capacidad').join(', ') + '/5',
+      '5. Quiero aprender: ' + optional(form.elements['aprender'].value),
+      '6. Quiero llevarme: ' + optional(form.elements['llevar'].value)
+    ].join('\n');
+  }
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!validate()) return;
+    window.location.href = 'https://wa.me/34605004011?text=' + encodeURIComponent(message());
+  });
+  document.getElementById('enviar-email').addEventListener('click', function () {
+    if (!validate()) return;
+    window.location.href = 'mailto:eduardramos@gmail.com?subject=' + encodeURIComponent('Cuestionario previo · Del conflicto al encuentro') + '&body=' + encodeURIComponent(message());
+  });
+})();
+</script>
+</body>
+</html>
