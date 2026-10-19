@@ -122,6 +122,14 @@ progress::-webkit-progress-value{background:var(--blue)}
 .resource-list{list-style:none;margin:20px 0;padding:0}
 .resource-list li{border-bottom:1px solid var(--line)}
 .resource-list a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 0;text-decoration:none;font-size:15px;min-height:48px}
+.workshop-list{display:grid;gap:34px;margin-top:34px}
+.workshop-preview{padding-bottom:34px;border-bottom:1px solid var(--line)}
+.workshop-preview:last-child{padding-bottom:0;border-bottom:0}
+.workshop-preview h3{font-size:25px;line-height:1.35;margin:0 0 7px;text-wrap:balance}
+.workshop-subtitle{font-size:14px;line-height:1.6;color:var(--muted);margin-bottom:18px}
+.workshop-preview p:not(.workshop-subtitle){font-size:17px;line-height:1.75}
+.workshop-cta{margin-top:2px;gap:18px;min-height:48px}
+@media print{.workshop-preview{break-inside:avoid}.workshop-preview h3{font-size:15pt}.workshop-preview p:not(.workshop-subtitle){font-size:11pt}.workshop-subtitle{font-size:9pt}}
 .guide-footer{padding:35px 0 90px;border-top:1px solid var(--line);font-size:15px}
 .closing{font-size:38px;line-height:1.2;margin:20px 0 27px}
 .guide-footer>p:not(.closing){margin-bottom:5px}
