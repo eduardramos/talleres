@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#155da1">
   <title>Me cuesta decir no · Taller en Chodes</title>
-  <meta name="description" content="Un taller para reconocer límites y expresarlos. Sábado 28 de noviembre de 2026, de 16:00 a 19:30 h, en Casa Azul, Chodes. Reserva tu plaza.">
+  <meta name="description" content="Un taller para reconocer límites y expresarlos. Sábado 28 de noviembre de 2026, de 16:00 a 19:30 h, en Casa Azul, Chodes (Zaragoza). 45 €. Información y reservas.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
   <meta property="og:title" content="Me cuesta decir no · Taller en Chodes">
-  <meta property="og:description" content="Un taller para reconocer límites y expresarlos. 28 de noviembre · Casa Azul, Chodes · 45 € por plaza.">
+  <meta property="og:description" content="Un taller para reconocer límites y expresarlos. Sábado 28 de noviembre, 16:00–19:30 h · Casa Azul, Chodes (Zaragoza) · 45 €.">
   <meta property="og:url" content="https://eduardramos.github.io/talleres/me-cuesta-decir-no/">
+  <meta property="og:image" content="https://eduardramos.github.io/talleres/me-cuesta-decir-no/casa-azul-sillas.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="La entrada de Casa Azul con la cortina al viento y dos sillas bajo una luz dorada.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://eduardramos.github.io/talleres/me-cuesta-decir-no/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +52,11 @@
     main { padding-block: 37px 44px; }
     .intro { margin: 0 0 12px; color: var(--profundo); font-size: clamp(1.2rem, 2.5vw, 1.55rem); font-weight: 900; line-height: 1.32; max-width: 67ch; }
     .description { margin: 0; max-width: 73ch; }
-    .method { margin-top: 24px; max-width: 73ch; }
+    .method { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 27px; margin-top: 26px; }
+    .method section + section { padding-inline-start: 27px; border-inline-start: 1px solid var(--linea); }
+    .checks { margin: 0; padding: 0; display: grid; gap: 9px; list-style: none; }
+    .checks li { display: grid; grid-template-columns: 1.2em minmax(0, 1fr); gap: .25em; }
+    .checks span { color: var(--azul); font-weight: 900; }
     .method h2 { color: var(--profundo); font-size: clamp(1.25rem, 2.6vw, 1.6rem); }
     .method p { margin: 0; }
     .facts { display: grid; grid-template-columns: 1.25fr 1fr .55fr; margin: 25px 0 0; padding: 17px 20px; border: 1px solid var(--linea); border-radius: 16px; background: var(--claro); }
@@ -55,26 +65,35 @@
     .facts div:first-child { padding-inline-start: 0; }
     .facts dt { color: var(--profundo); font-weight: 900; }
     .facts dd { margin: 2px 0 0; color: #354f66; }
-    .picoteo { margin: 12px 0 33px; color: var(--suave); }
+    .facts .price { display: flex; align-items: center; }
+    .price dd { margin: 0; color: var(--profundo); font-size: 1.35rem; font-weight: 900; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    .picoteo { margin: 12px 0 28px; color: var(--suave); }
+    .contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: center; }
+    .workshop-photo { margin: 0; }
+    .workshop-photo img { display: block; width: 100%; height: auto; border-radius: 22px; }
     .reserve { border-radius: 22px; padding: clamp(20px, 4vw, 36px); background: var(--calabaza); color: white; scroll-margin-top: 18px; }
     h2 { margin: 0 0 10px; font-size: clamp(1.65rem, 3.4vw, 2.4rem); line-height: 1.12; letter-spacing: -.025em; font-weight: 900; }
-    .reserve p { margin: 0 0 17px; }
-    .reserve form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8.5rem, .42fr) auto; gap: 14px; align-items: end; margin-bottom: 14px; }
+    .reserve h2 { font-size: clamp(1.4rem, 2.9vw, 2rem); }
+    .reserve form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(7.5rem, .52fr); gap: 12px; align-items: end; margin-top: 13px; }
+    .reserve form > p, .reserve form > button { grid-column: 1 / -1; }
+    .reserve form > p { margin: 0; font-size: .93rem; }
     [hidden] { display: none !important; }
     .field { display: grid; gap: 6px; font-weight: 800; }
     input { min-width: 0; width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid transparent; border-radius: 11px; color: var(--tinta); background: white; font: inherit; }
     input:focus-visible { outline-color: var(--oro); }
     .reserve .button { background: var(--oro); color: #203346; }
     .reserve .button:hover { background: #ffdb98; }
-    .reserve .email { margin: 0; font-size: .95rem; }
-    .email a { color: inherit; text-underline-offset: .18em; }
+    .contact-links { display: grid; gap: 3px; margin-top: 14px; font-size: .95rem; }
+    .contact-links a { width: fit-content; color: white; text-underline-offset: .18em; }
     footer { display: flex; gap: 12px; justify-content: space-between; margin-top: 29px; font-size: .94rem; color: var(--profundo); }
     footer a { color: inherit; text-underline-offset: .18em; }
     @media (max-width: 700px) {
       .hero { padding-block: 38px; }
       .hero-inner { gap: 12px; }
-      .reserve form { grid-template-columns: minmax(0,1fr) minmax(6.7rem,.55fr); }
-      .reserve form .button { grid-column: 1 / -1; }
+      .contact-grid, .method { grid-template-columns: minmax(0, 1fr); }
+      .method { gap: 19px; }
+      .method section + section { padding-inline-start: 0; border-inline-start: 0; }
     }
     @media (max-width: 510px) {
       .wrap { width: min(100% - 36px, 970px); }
@@ -91,10 +110,10 @@
   <header class="hero">
     <div class="wrap hero-inner">
       <div>
-        <p class="eyebrow">Talleres en la Casa Azul de Chodes · 02/12</p>
+        <p class="eyebrow">Talleres en la Casa Azul de Chodes</p>
         <h1><span>Me cuesta</span> <span>decir no</span></h1>
         <p class="subtitle">Un taller para reconocer límites y expresarlos.</p>
-        <a class="button" href="#reserva">Reservar plaza</a>
+        <a class="button" href="#reserva">Más información y reservas</a>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" width="380" height="240" class="chairs" aria-hidden="true" viewBox="0 0 380 240">
 <circle cx="190" cy="78" fill="#f8c76e" r="38"></circle>
@@ -109,29 +128,47 @@
     </div>
   </header>
   <main class="wrap">
-    <p class="intro">A veces decimos que sí por no decepcionar y solo después nos damos cuenta de que queríamos decir no.</p>
-    <p class="description">Este taller te proporcionará las herramientas y prácticas necesarias para ganar asertividad y expresar con claridad lo que necesitas, tanto en familia como en el trabajo.</p>
-    <section class="method" aria-labelledby="metodologia">
-      <h2 id="metodologia">Cómo trabajaremos</h2>
-      <p>Utilizando herramientas de comunicación asertiva y escucha empática, practicaremos con situaciones de la vida familiar y laboral en las que nos cuesta poner límites. Ensayaremos cómo decir que no con claridad y cómo escuchar la respuesta de la otra persona manteniendo nuestra decisión.</p>
-    </section>
+    <p class="intro">¿Cuántas veces has dicho que sí y, al cabo de un rato, te has preguntado por qué?</p>
+    <p class="description">En el taller exploraremos ese porqué y también el para qué. Tomaremos conciencia de nuestros síes y nuestros noes para aprender a expresarlos con respeto y asertividad, incluso cuando sentimos la presión de ceder.</p>
+    <div class="method">
+      <section aria-labelledby="metodologia">
+        <h2 id="metodologia">Cómo trabajaremos</h2>
+        <p>Practicaremos con situaciones de la familia y del trabajo en las que cuesta poner límites. Usaremos la comunicación asertiva y la escucha empática para expresarlos con respeto hacia los demás y hacia nosotros mismos.</p>
+      </section>
+      <section aria-labelledby="exploracion">
+        <h2 id="exploracion">Qué exploraremos</h2>
+        <ul class="checks">
+          <li><span aria-hidden="true">✓</span>Cuando digo que sí, ¿a qué estoy diciendo que no?</li>
+          <li><span aria-hidden="true">✓</span>Cuando digo que no, ¿a qué estoy diciendo que sí?</li>
+          <li><span aria-hidden="true">✓</span>Expresar un límite en primera persona.</li>
+          <li><span aria-hidden="true">✓</span>Reformular lo que he entendido de la otra persona y sostener mi decisión.</li>
+        </ul>
+      </section>
+    </div>
     <dl class="facts" aria-label="Datos del taller">
       <div><dt><time datetime="2026-11-28">Sábado 28 de noviembre de 2026</time></dt><dd>De 16:00 a 19:30 h</dd></div>
-      <div><dt>Casa Azul</dt><dd>Chodes</dd></div>
-      <div><dt>45 €</dt><dd>Por plaza</dd></div>
+      <div><dt>Casa Azul</dt><dd>Chodes (Zaragoza)</dd></div>
+      <div class="price"><dt class="visually-hidden">Importe</dt><dd>45 €</dd></div>
     </dl>
-    <p class="picoteo">Al terminar, compartiremos un picoteo.</p>
-    <section class="reserve" id="reserva" aria-labelledby="reserva-title">
-      <h2 id="reserva-title">Reserva tu plaza</h2>
-      <p id="reserva-ayuda">Al continuar, WhatsApp abrirá tu solicitud para que la envíes a Eduard.</p>
-      <form id="reservation-form" aria-describedby="reserva-ayuda" hidden>
-        <label class="field">Tu nombre<input name="nombre" type="text" autocomplete="name" maxlength="120" pattern=".*\S.*" required></label>
-        <label class="field">Número de plazas<input name="plazas" type="number" inputmode="numeric" min="1" step="1" value="1" required></label>
-        <button class="button" type="submit">Continuar a WhatsApp</button>
-      </form>
-      <a class="button" id="whatsapp-direct" href="https://wa.me/34605004011?text=Hola%20Eduard%2C%20quiero%20reservar%20para%20el%20taller%20Me%20cuesta%20decir%20no.">Continuar a WhatsApp</a>
-      <p class="email">También puedes escribir a <a href="mailto:info@eduardramos.com">info@eduardramos.com</a>.</p>
-    </section>
+    <p class="picoteo">Al terminar, compartiremos un picoteo / cena.</p>
+    <div class="contact-grid">
+      <section class="reserve" id="reserva" aria-labelledby="reserva-title">
+        <h2 id="reserva-title">Más información y reservas</h2>
+        <form id="reservation-form" aria-describedby="reserva-ayuda" hidden>
+          <p id="reserva-ayuda">Al continuar, WhatsApp abrirá tu solicitud de reserva lista para enviar.</p>
+          <label class="field">Tu nombre<input name="nombre" type="text" autocomplete="name" maxlength="120" pattern=".*\S.*" required></label>
+          <label class="field">Número de plazas<input name="plazas" type="number" inputmode="numeric" min="1" step="1" value="1" required></label>
+          <button class="button" type="submit">Solicitar reserva por WhatsApp</button>
+        </form>
+        <div class="contact-links">
+          <a id="whatsapp-direct" href="https://wa.me/34605004011?text=Hola+Eduard%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+este+taller.">Pedir información por WhatsApp</a>
+          <a href="mailto:info@eduardramos.com">info@eduardramos.com</a>
+        </div>
+      </section>
+      <figure class="workshop-photo">
+        <img src="casa-azul-sillas.jpg" alt="La puerta abierta de Casa Azul, con la cortina al viento y dos sillas bajo una luz dorada." width="1200" height="630" decoding="async">
+      </figure>
+    </div>
     <footer><span>Facilita Eduard Ramos</span><a href="https://eduardramos.com/">eduardramos.com</a></footer>
   </main>
   <script>
@@ -154,7 +191,6 @@
     });
 
     form.hidden = false;
-    direct.hidden = true;
   </script>
 </body>
 </html>
