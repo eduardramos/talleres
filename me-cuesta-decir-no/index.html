@@ -20,7 +20,7 @@
   <link rel="canonical" href="https://eduardramos.github.io/talleres/me-cuesta-decir-no/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;family=Poppins:wght@600&amp;display=swap">
   <style>
     :root {
       color-scheme: light;
@@ -104,12 +104,47 @@
       .facts div:first-child { grid-column: 1 / -1; border-bottom: 1px solid #c5d8ea; padding-bottom: 10px; }
       .facts div:nth-child(2) { padding-inline-start: 0; border-inline-start: 0; }
     }
+    .site-header { background: #000; color: #fff; font-family: Poppins, Arial, sans-serif; }
+    .site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; width: min(100% - 36px, 1280px); padding-block: 14px; }
+    .site-logo { display: block; width: min(216px, 100%); color: inherit; }
+    .site-logo img { display: block; width: 100%; height: auto; }
+    .site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 18px; font-size: 1rem; }
+    .site-nav a, .site-nav summary { display: block; padding-block: 6px; color: inherit; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; text-underline-offset: .2em; }
+    .site-nav a:focus-visible, .site-nav summary:focus-visible, .site-logo:focus-visible { outline-color: #fff; }
+    .site-language { position: relative; }
+    .site-language summary { display: list-item; cursor: pointer; }
+    .site-language ul { position: absolute; z-index: 1; inset-inline-end: 0; min-width: 110px; margin: 0; padding: 4px 12px; list-style: none; background: #000; }
+    .workshop-back { display: inline-block; margin-bottom: 18px; color: inherit; font-size: .95rem; text-underline-offset: .2em; }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-logo" href="https://eduardramos.com/">
+        <img src="https://eduardramos.com/wp-content/uploads/2026/06/joyihth.png" width="2168" height="296" alt="Eduard Ramos | Coach">
+      </a>
+      <nav class="site-nav" aria-label="Menú principal">
+        <a href="https://eduardramos.com/">Inicio</a>
+        <a href="https://eduardramos.com/sobre-mi/">Sobre mí</a>
+        <a href="https://eduardramos.com/servicios/">Servicios</a>
+        <a href="https://eduardramos.com/talleres/">Talleres</a>
+        <a href="https://eduardramos.com/blog/">Blog</a>
+        <a href="https://www.skool.com/eduard-ramos-sin-exagerar-5910">Área Clientes</a>
+        <details class="site-language">
+          <summary>Español</summary>
+          <ul>
+            <li><a href="https://eduardramos.com/ca/inici/" lang="ca" hreflang="ca">Català</a></li>
+            <li><a href="https://eduardramos.com/en/home/" lang="en" hreflang="en">English</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
   <header class="hero">
     <div class="wrap hero-inner">
       <div>
+        <a class="workshop-back" href="https://eduardramos.com/me-cuesta-decir-no/"><span aria-hidden="true">←</span> Volver a la página del taller</a>
         <p class="eyebrow">Talleres en la Casa Azul de Chodes</p>
         <h1><span>Me cuesta</span> <span>decir no</span></h1>
         <p class="subtitle">Un taller para reconocer límites y expresarlos.</p>
